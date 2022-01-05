@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: minbackend_production
-  username: minbackend
-  password: <%= ENV['MINBACKEND_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
