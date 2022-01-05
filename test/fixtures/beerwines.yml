@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  beer: false
+  draft: false
+  red: false
+
+two:
+  name: MyString
+  beer: false
+  draft: false
+  red: false
