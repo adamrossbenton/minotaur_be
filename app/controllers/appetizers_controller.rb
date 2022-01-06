@@ -1,5 +1,6 @@
 class AppetizersController < ApplicationController
   before_action :set_appetizer, only: [:show, :update, :destroy]
+  before_action :authorized, only: [:create, :update, :destroy]
 
   # GET /appetizers
   def index

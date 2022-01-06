@@ -1,5 +1,6 @@
 class BeerwinesController < ApplicationController
   before_action :set_beerwine, only: [:show, :update, :destroy]
+  before_action :authorized, only: [:create, :update, :destroy]
 
   # GET /beerwines
   def index

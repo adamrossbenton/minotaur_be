@@ -1,5 +1,6 @@
 class EntreesController < ApplicationController
   before_action :set_entree, only: [:show, :update, :destroy]
+  before_action :authorized, only: [:create, :update, :destroy]
 
   # GET /entrees
   def index
