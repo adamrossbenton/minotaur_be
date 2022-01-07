@@ -1,5 +1,6 @@
 class DrinksController < ApplicationController
   before_action :set_drink, only: [:show, :update, :destroy]
+  before_action :authorized, only: [:create, :update, :destroy]
 
   # GET /drinks
   def index
